@@ -36,17 +36,17 @@ void swap(int* a, int* b)
 }
 
 /*******************************************************************
-*																   *
-* @NAME		: partition											   *
-* @FUNTION  : 피벗보다 작은요소들은 왼쪽,큰 요소들은 오른쪽으로 분할	   *
-*			  1. 리스트의 마지막 요소를 피벗(pivot)지정.			   *
-*			  2. 피벗보다 배열의 요소가 크면, left+1과 right 자리바꿈 *
-*				 left++, right++								   *
-*			  3. 피벗보다 배열의 요소가 작으면, right++			   *
-*			  4. right == end이면 pivot과 right 자리바꿈			   *
-* @PARMETER : 배열, 첫번째 index, 마지막 index					   *
-* @RETURN	: (int) pivot의 index								   *
-*																   *
+*								  
+* @NAME	    : partition						  
+* @FUNTION  : 피벗보다 작은요소들은 왼쪽,큰 요소들은 오른쪽으로 분할   
+*	      1. 리스트의 마지막 요소를 피벗(pivot)지정.		
+*	      2. 피벗보다 배열의 요소가 크면, left+1과 right 자리바꿈  
+*		 left++, right++				   
+*	      3. 피벗보다 배열의 요소가 작으면, right++			   
+*	      4. right == end이면 pivot과 right 자리바꿈			   
+* @PARMETER : 배열, 첫번째 index, 마지막 index					   
+* @RETURN   : (int) pivot의 index								   
+*																   
 ********************************************************************/
 int partition(int data[], int start, int end)
 {
@@ -70,14 +70,13 @@ int partition(int data[], int start, int end)
 
 
 /*******************************************************************
-*																   *
-* @NAME		: quick_sort										   *
-* @FUNTION  : 피벗보다 작은요소들은 왼쪽,큰 요소들은 오른쪽으로 분할	   *
-*			  순환 호출 을 통하여 나누었던 2개의 배열				   *
-*			  (피벗보다 작은 배열, 큰 배열)을 다시 분할 한다.		   *
-* @PARMETER : 배열, 첫번째 index, 마지막 index					   *
-* @RETURN	: 없음			    			 					   *
-*																   *
+*																   
+* @NAME	    : quick_sort										   
+* @FUNTION  : 피벗보다 작은요소들은 왼쪽,큰 요소들은 오른쪽으로 분할	   
+*	      순환 호출 을 통하여 나누었던 2개의 배열 (피벗보다 작은 배열, 큰 배열)을 다시 분할 한다.		   
+* @PARMETER : 배열, 첫번째 index, 마지막 index					   
+* @RETURN   : 없음			    			 					   
+*																   
 ********************************************************************/
 void quick_sort(int data[], int start, int end)
 {
